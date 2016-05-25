@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:padding="20dp"
+        android:background="#80FFFFFF"
+        android:src="@drawable/playbutton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ImageView>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/grid_star"
+        android:background="#80FFFFFF"
+        android:src="@drawable/abc_btn_rating_star_off_mtrl_alpha"
+        android:layout_below="@+id/grid_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="1dp"
+        android:padding="8dp" />
+    <TextView
+        android:id="@+id/grid_text"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Plie"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:background="#80FFFFFF"
+        android:layout_alignBottom="@+id/grid_star"
+        android:layout_toRightOf="@+id/grid_star"
+        android:layout_alignRight="@+id/grid_image"
+        android:layout_alignEnd="@+id/grid_image"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+    </TextView>
+
+</RelativeLayout>
+

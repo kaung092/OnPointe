@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">OnPointe</string>
+    <string name="action_settings">Settings</string>
+    <string name="none_paired">No devices have been paired</string>
+
+    <string name="title_activity_record_practice2">OnPointe</string>
+    <string name="title_activity_record">Record New Moves</string>
+    <string name="title_activity_play_back">Reference Videos</string>
+    <string name="title_activity_save_video_input_dialog">Record New Moves</string>
+    <string name="title_activity_user_acount">User Account</string>
+    <string name="description">Media Controls</string>
+    <string name="title_activity_practice_existing">Choose a Reference</string>
+    <string name="title_activity_practice_video">Practice Existing Moves</string>
+    <string name="title_activity_play_back_practiced">Practiced Videos</string>
+    <string name="title_activity_view_practiced_videos">Practiced Videos</string>
+    <string name="title_activity_column_play_back">Reference Videos</string>
+    <string name="title_activity_column_practiced">Practiced Videos</string>
+    <string name="title_activity_list_bluetooth_devices">Bluetooth</string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="bean1">Bean1</string>
+    <string name="bean2">Bean2</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="title_activity_splash_screen">OnPointe</string>
+    <string name="title_activity_record_environment">record_environment</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="record_string">Record Video</string>
+    <string name="title_activity_split_camera">Split_camera</string>
+    <string name="title_activity_new_record_video">newRecordVideo</string>
+
+    <string name="permission_request">This sample needs permission for camera and audio recording.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+</resources>

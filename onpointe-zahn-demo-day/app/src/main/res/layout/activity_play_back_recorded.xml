@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.rene.dancesafe.playBack">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/linearLayout2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CC000000"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="false"
+            android:id="@+id/linearLayout3"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dip"
+                android:orientation="horizontal">
+
+                <ImageButton android:id="@+id/prev"
+                    style="@android:style/MediaButton.Previous"
+                    android:contentDescription="@string/description" />
+
+                <ImageButton android:id="@+id/rew"
+                    style="@android:style/MediaButton.Rew"
+                    android:contentDescription="@string/description" />
+
+                <ImageButton android:id="@+id/pause"
+                    style="@android:style/MediaButton.Play"
+                    android:contentDescription="@string/description" />
+
+                <ImageButton android:id="@+id/ffwd"
+                    style="@android:style/MediaButton.Ffwd"
+                    android:contentDescription="@string/description" />
+
+                <ImageButton android:id="@+id/next"
+                    style="@android:style/MediaButton.Next"
+                    android:contentDescription="@string/description" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/time_current"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:paddingTop="4dip"
+                    android:paddingLeft="4dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="4dip"
+                    android:textColor="#ffffff" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <SeekBar
+                        android:id="@+id/mediacontroller_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignLeft="@+id/seek_divider_1"
+                        android:layout_alignStart="@+id/seek_divider_1"
+                        android:layout_alignRight="@+id/seek_divider_2"
+                        android:layout_alignEnd="@+id/seek_divider_2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+                <TextView android:id="@+id/time"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:paddingTop="4dip"
+                    android:paddingRight="4dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dip"
+                    android:textColor="#ffffff" />
+
+                <ImageButton android:id="@+id/fullscreen"
+                    android:layout_marginTop="-7dp"
+                    android:paddingTop="4dip"
+                    android:paddingBottom="4dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="4dip"
+                    android:layout_gravity="top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/description" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:clickable="false"
+        android:id="@+id/options_tab"
+        android:background="@drawable/options_menu">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/home"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:nestedScrollingEnabled="false"
+                android:onClick="home"
+                android:background="@drawable/abc_ic_menu_selectall_mtrl_alpha"
+                android:layout_marginBottom="2dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/bluetooth"
+                android:layout_weight="1"
+                android:background="@android:drawable/stat_sys_data_bluetooth"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:onClick="bluetooth"
+                android:layout_marginBottom="2dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/video_recorded"
+                android:layout_weight="1"
+                android:background="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:onClick="video_recorded"
+                android:layout_marginBottom="2dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/video_practiced"
+                android:layout_weight="1"
+                android:background="@drawable/abc_ic_menu_paste_mtrl_am_alpha"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="22dp"
+                android:onClick="video_practiced"
+                android:layout_marginBottom="2dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/user_account"
+                android:layout_weight="1"
+                android:background="@drawable/user3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:onClick="user_account"
+                android:layout_marginBottom="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bluetooth"
+                android:id="@+id/textView11"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reference"
+                android:id="@+id/textView12"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Practiced"
+                android:id="@+id/textView13"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:id="@+id/textView14"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>

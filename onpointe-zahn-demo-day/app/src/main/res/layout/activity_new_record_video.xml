@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:background="@drawable/background"><![CDATA[
+
+    >
+
+
+
+
+    ]]>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+                <com.example.rene.dancesafe.AutoFitTextureView
+                    android:id="@+id/texture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    tools:targetApi="ice_cream_sandwich"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="false"
+                    android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CC000000"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="false"
+            android:id="@+id/linearLayout3"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dip"
+                android:orientation="horizontal">
+
+                <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronometer"
+                    android:textColor="#ffffff"
+                    android:format="%s"
+                    android:textSize="25sp" />
+
+                <ImageButton android:id="@+id/prev"
+                    style="@android:style/MediaButton.Previous"
+                    android:contentDescription="@string/description"
+                    android:visibility="gone" />
+
+                <ImageButton android:id="@+id/rew"
+                    style="@android:style/MediaButton.Rew"
+                    android:contentDescription="@string/description"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/video"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/video_font_awesome" />
+
+                <ImageButton android:id="@+id/ffwd"
+                    style="@android:style/MediaButton.Ffwd"
+                    android:contentDescription="@string/description"
+                    android:visibility="invisible" />
+
+                <ImageButton android:id="@+id/next"
+                    style="@android:style/MediaButton.Next"
+                    android:contentDescription="@string/description"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/switch_camera"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/switch_camera"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

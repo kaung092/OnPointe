@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seek_divider_3"
+    android:layout_width="5dp"
+    android:layout_height="5dp"
+    android:layout_marginLeft="53dp"
+    android:background="#FF0000"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:uses-sdk="http://schemas.android.com/apk/res-auto"
+    package="com.example.rene.dancesafe" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera2.full" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecordPractice2"
+            android:label="@string/title_activity_record_practice2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".record"
+            android:label="@string/title_activity_record"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".saveVideoInputDialog"
+            android:label="@string/title_activity_save_video_input_dialog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".user_account"
+            android:label="@string/title_activity_user_acount"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".playBack"
+            android:label="@string/title_activity_play_back"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".practice_existing"
+            android:label="@string/title_activity_practice_existing"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".practice_video"
+            android:label="@string/title_activity_practice_video"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ViewPracticedVideos"
+            android:label="@string/title_activity_view_practiced_videos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".column_play_back"
+            android:label="@string/title_activity_column_play_back"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".column_practiced"
+            android:label="@string/title_activity_column_practiced"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ListBluetoothDevices"
+            android:label="@string/title_activity_list_bluetooth_devices"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DeviceControlActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <service
+            android:name=".BluetoothLeService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Split_camera"
+            android:label="@string/title_activity_split_camera"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".newRecordVideo"
+            android:label="@string/title_activity_new_record_video"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,388 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:background="@drawable/background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="0.5dp"
+                android:background="#CC000000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Reference"
+                    android:id="@+id/textView7"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#CC000000"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Recording"
+                    android:id="@+id/textView15"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/cam_layout2"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:layout_marginRight="0.5dp">
+
+                <VideoView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/viewVideo_ref"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/textView16"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginBottom="57dp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp">
+                <com.example.rene.dancesafe.AutoFitTextureView
+                    android:id="@+id/texture2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    tools:targetApi="ice_cream_sandwich"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_above="@+id/video2"
+            android:id="@+id/cam_layout3"
+            android:layout_weight="1.5">
+
+            <RelativeLayout
+
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:id="@+id/footMap_ref"
+                android:background="@drawable/insole"
+                android:layout_weight="1"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="right|top">
+
+                <View android:id="@+id/p1_ref"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/r1"
+
+
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="visible" />
+                <View android:id="@+id/p2_ref"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/r2"
+
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginRight="54dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentTop="true" />
+                <View android:id="@+id/p3_ref"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/r3"
+
+
+                    android:layout_marginTop="38dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="38dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible" />
+                <View android:id="@+id/p4_ref"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/r4"
+
+
+                    android:layout_marginTop="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible" />
+                <View android:id="@+id/p5_ref"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/r5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="52dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:layout_marginTop="95dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="0"
+                    android:id="@+id/Ref_P_text"
+                    android:textSize="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@+id/p3_ref" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:id="@+id/footMap_prac"
+                android:background="@drawable/insole"
+                android:layout_weight="1"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:longClickable="false">
+
+                <View android:id="@+id/p1_prac"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/r1"
+
+
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="visible" />
+                <View android:id="@+id/p2_prac"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/r2"
+
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginRight="54dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentTop="true" />
+                <View android:id="@+id/p3_prac"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/r3"
+
+
+                    android:layout_marginTop="38dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="38dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible" />
+                <View android:id="@+id/p4_prac"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/r4"
+
+
+                    android:layout_marginTop="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible" />
+                <View android:id="@+id/p5_prac"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/r5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="52dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:layout_marginTop="95dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="0"
+                    android:id="@+id/Prac_P_text"
+                    android:textSize="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@+id/p3_prac" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CC000000"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="false"
+            android:id="@+id/linearLayout3"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="4dip"
+                android:orientation="horizontal">
+
+                <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronometer"
+                    android:textColor="#ffffff"
+                    android:format="%s"
+                    android:textSize="25sp" />
+
+                <ImageButton android:id="@+id/prev"
+                    style="@android:style/MediaButton.Previous"
+                    android:contentDescription="@string/description"
+                    android:visibility="gone" />
+
+                <ImageButton android:id="@+id/rew"
+                    style="@android:style/MediaButton.Rew"
+                    android:contentDescription="@string/description"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/video2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/video_font_awesome" />
+
+                <ImageButton android:id="@+id/ffwd"
+                    style="@android:style/MediaButton.Ffwd"
+                    android:contentDescription="@string/description"
+                    android:visibility="invisible" />
+
+                <ImageButton android:id="@+id/next"
+                    style="@android:style/MediaButton.Next"
+                    android:contentDescription="@string/description"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/switch_camera"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/switch_camera"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
