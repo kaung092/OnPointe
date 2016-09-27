@@ -3,7 +3,7 @@
 ## Synopsis
 
 OnPointe is an Android app that can simultaneoulsy record video and receive BLE(Bluetooth Low Energy) data from two devices.
-The idea is to receive realtime pressure data of an insole from home-made insole equipped with five pressure sensors and LightBlue Bean `microcontroller`.
+The idea is to receive realtime pressure data of an insole from home-made insole equipped with five pressure sensors and LightBlue Bean microcontroller.
 
 
 ## Motivation
